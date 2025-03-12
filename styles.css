@@ -1,0 +1,315 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Corpo */
+body {
+    background-color: #0d1117;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #0d1117;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.name {
+    font-family:Bai Jamjuree;
+    width: 700;
+    size:42px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #ffffff;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #58a6ff;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 120px 20px 50px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #58a6ff;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 10px auto;
+    font-size: 1rem;
+    color: #c9d1d9;
+}
+
+/* Seção Sobre Mim */
+.about {
+    background-color: #102030;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.about h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+.about p {
+    max-width: 600px;
+    margin: 10px auto;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.about-content {
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 280px;
+    color:#000000;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: grid;
+    display: grid;
+  
+}
+
+.card p {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #000000;
+}
+
+/* Skills */
+.skills {
+    text-align: center;
+    padding: 58px 30x;
+}
+
+.skills h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.icons img {
+    width: 70px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icons img:hover {
+    transform: scale(1.1);
+}
+
+.bar {
+    height: 10px;
+    border-radius: 5px;
+    background-color: #5A606A;
+    }
+    
+    .retang1{
+        height: 10px;
+        background-color: rgba(162, 89, 255, 1);
+        border-radius: 5px;
+        margin-top: 9px;
+        
+    }
+    
+    .retang2 {
+        height: 10px;
+        background-color: #F7DF1E;
+        border-radius: 5px;
+        margin-top: 9px;
+    }
+    
+    .retang3 {
+        height: 10px;
+        background-color: rgba(49, 120, 198, 1);
+        border-radius: 5px;
+        margin-top: 9px;
+    }
+    
+    .retang4 {
+        height: 10px;
+        background-color:#E44D26 ;
+        border-radius: 5px;
+        margin-top: 1px;
+    }
+    
+    .retang5 {
+        height: 10px;
+        background-color: #29ABE2;
+        border-radius: 5px;
+        margin-top: 1px
+    }
+
+    .retang6 {
+        height: 10px;
+        background-color: rgba(0, 216, 255, 1);
+        border-radius: 5px;
+        margin-top: 16px
+    }
+
+    .retang7 {
+        height: 10px;
+        background-color: rgba(0, 84, 107, 1);
+        border-radius: 5px;
+        margin-top: 10px
+    }
+
+    .retang8 {
+        height: 10px;
+        background-color: rgba(83, 158, 67, 1);
+        border-radius: 5px;
+        margin-top: 9px
+    }
+
+/* Projetos */
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 800;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #161b22;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(45, 130, 183, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card p {
+    margin-top: 10px;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card p {
+    margin-top: 10px;
+}
+
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Contato */
+.footer {
+    background-color: #161b22;
+    padding: 40px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.footer h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+p {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+img {
+    width: 24px;
+}
+
+footer a {
+    color:#0077b5;
+    text-decoration: none;
+    font-weight:bold;
+}
+
+footer a houver {
+    text-decoration: underline;
+}
+
+
