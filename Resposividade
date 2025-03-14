@@ -1,0 +1,14 @@
+/* Responsividade */
+@media (max-width: 1024px) {
+    /* Ajuste geral para telas médias */
+    body {
+        background-size: 50%;
+    }
+
+    header {
+        padding: 15px 30px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
