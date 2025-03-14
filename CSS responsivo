@@ -1,0 +1,227 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: rgba(22, 22, 22, 1);
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(Img/logo\ 2.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 30%;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(22, 22, 22, 1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(98, 105, 116, 1);
+}
+
+.logo {
+    width: 55px;
+    height: auto;
+}
+
+/* Estilização do Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #58a6ff;
+}
+
+/* Menu Responsivo */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+/* Seção Principal */
+.SP {
+    text-align: center;
+    padding: 120px 20px 50px;
+}
+
+.SP h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.SP p {
+    max-width: 600px;
+    margin: 10px auto;
+    font-size: 1rem;
+}
+
+/* Sobre Mim */
+.grades {
+    background-color: #102030;
+    width: 80%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.grades-content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    color: #000000;
+}
+
+/* Ajustes para Telas Pequenas */
+@media (max-width: 768px) {
+    .grades {
+        width: 95%;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+/* Skills */
+.skills {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.group img {
+    width: 50px;
+}
+
+.bar {
+    width: 80px;
+    height: 5px;
+    background-color: #555;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.bar div {
+    height: 5px;
+    background-color: #58a6ff;
+    border-radius: 5px;
+}
+
+/* Projetos */
+.projects {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Ajuste para Dispositivos Menores */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Contato */
+.footer {
+    text-align: center;
+    background-color: #111;
+    padding: 30px 10px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.left, .right {
+    width: 45%;
+}
+
+.footericon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Ajustes para Telas Pequenas */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left, .right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
